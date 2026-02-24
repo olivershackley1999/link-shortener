@@ -1,0 +1,12 @@
+# requirements.txt — Python packages this app needs.
+# When Docker builds the image, it runs "pip install -r requirements.txt"
+# to install these into the container.
+#
+# flask:     The web framework (handles routes, requests, responses)
+# psycopg2-binary: The PostgreSQL driver for Python (lets Python talk to Postgres)
+#   The "-binary" version comes pre-compiled so you don't need to install
+#   system-level build tools in the container. Saves time and image size.
+# gunicorn:  A production-grade WSGI server (explained below in the Dockerfile)
+flask==3.1.0
+psycopg2-binary==2.9.10
+gunicorn==23.0.0
