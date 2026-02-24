@@ -2,6 +2,7 @@
 
 A URL shortening service that takes a URL as input and provides a shortened one back.
 
+![App Screenshot](app.png)
 ## Architecture
 
 Three containerized services: nginx, Flask, and a PostgreSQL database. 
