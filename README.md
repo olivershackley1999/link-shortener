@@ -17,8 +17,8 @@ browser --> nginx --> Flask --> PostgreSQL --> back out to the user.
 
 2. Clone the repo
 
-`git clone repo`
-`cd link-shortener`
+- `git clone repo`
+- `cd link-shortener`
 
 ## Environment Variables/Configuration
 
@@ -31,16 +31,14 @@ A sample .env.example file is provided for your reference.
 
 ## How to use
 
-1. Build and run
-
-`docker-compose up --build`
+1. Build and run with `docker-compose up --build`
 
 2. Visit http://localhost:80 in your browser to try
 
 3. Press ctrl + c when done, followed by `docker-compose down -v`  
 
 ## Directory Tree
-
+```
 ├── app
 │   ├── app.py
 │   ├── Dockerfile
@@ -48,7 +46,7 @@ A sample .env.example file is provided for your reference.
 │   ├── nginx.conf
 │   └── requirements.txt
 ├── docker-compose.yml
-
+```
 **Known Limitations**
 
 - No HTTPS
